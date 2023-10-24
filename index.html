@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="./images/fav_icon.png" rel="icon" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Tenki Weather App</title>
+    <style>
+        body{
+          box-sizing: border-box;
+          padding: 0;
+          margin: 0;
+        }
+
+        .con{
+          width : 100vw;
+          height: 100vh;
+          background: linear-gradient(to right, #0f0c29, #262351, #0f0c29);
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .wlogo{
+          width: 90px;
+          animation: ani2 0.68s ease-out infinite alternate backwards;
+        }
+
+        @keyframes ani2 {
+            from{
+              opacity: 0.3;
+              transform: scale(1);
+            }
+            to{
+              opacity: 1;
+              transform: scale(1.08);
+            }
+        }
+    </style>
+  </head>
+  <body class="bg4">
+    <div id="root">
+      <div class="con">
+          <img class="wlogo" src="./images/weather_logo.png" alt="logo" />
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+        const style = 'color:#00bbff;background: linear-gradient(to right, #0f0c29, #262351, #0f0c29);font-size:18px;font-family:sans-serif;font-weight:500;padding:12px 20px;';
+        console.log('%c 🍅 Designed & Developed by Nyein Chan Aung \n https://github.com/nyeinchanaung009',style);
+    </script>
+  </body>
+</html>
